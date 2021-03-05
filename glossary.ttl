@@ -1,0 +1,34 @@
+@base <https://rossbowen.github.io/glossary/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema> .
+
+ <#AnimalThesaurus> a skos:ConceptScheme ;
+    dct:title "Simple animal thesaurus" ;
+    dct:creator "Ross Bowen" ;
+    dct:issued "2021-03-04"^^xsd:date ;
+    skos:hasTopConcept <#Mammal> ;
+    skos:hasTopConcept <#Fish> ;
+    .
+
+<#Mammal> a skos:Concept ;
+    rdfs:label "Mammal" ;
+    skos:definition "Mammals (from Latin mamma 'breast') are a group of vertebrate animals constituting the class Mammalia (/məˈmeɪliə/), and characterized by the presence of mammary glands which in females produce milk for feeding (nursing) their young, a neocortex (a region of the brain), fur or hair, and three middle ear bones." ;
+    skos:inScheme <#AnimalThesaurus> ;
+    skos:narrower <#Cow> ;
+    .
+
+<#Cow> a skos:Concept ;
+    rdfs:label "Cow" ;
+    skos:definition "Cattle, or cows (female) and bulls (male), are the most common type of large domesticated ungulates. They are a prominent modern member of the subfamily Bovinae, are the most widespread species of the genus Bos, and are most commonly classified collectively as Bos taurus." ;
+    skos:broader <#mammals> ;
+    skos:inScheme <#AnimalThesaurus> ;
+    .
+
+<#Fish> a skos:Concept ;
+    rdfs:label "Fish" ;
+    skos:definition "Fish are gill-bearing aquatic craniate animals that lack limbs with digits. They form a sister group to the tunicates, together forming the olfactores. Included in this definition are the living hagfish, lampreys, and cartilaginous and bony fish as well as various extinct related groups." ;
+    skos:inScheme <#AnimalThesaurus> ;
+    .

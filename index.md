@@ -1,37 +1,16 @@
-## Welcome to GitHub Pages
+# [Simple animal thesaurus](#AnimalThesaurus)
 
-You can use the [editor on GitHub](https://github.com/rossbowen/glossary.github.io/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+> Ross Bowen, 2021-03-04
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## [Mammal](#Mammal)
 
-### Markdown
+- Mammals (from Latin mamma 'breast') are a group of vertebrate animals constituting the class Mammalia (/məˈmeɪliə/), and characterized by the presence of mammary glands which in females produce milk for feeding (nursing) their young, a neocortex (a region of the brain), fur or hair, and three middle ear bones.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### [Cow](#Cow)
 
-```markdown
-Syntax highlighted code block
+- Cattle, or cows (female) and bulls (male), are the most common type of large domesticated ungulates. They are a prominent modern member of the subfamily Bovinae, are the most widespread species of the genus Bos, and are most commonly classified collectively as Bos taurus.
 
-# Header 1
-## Header 2
-### Header 3
+## [Fish](#Fish)
 
-- Bulleted
-- List
+- Fish are gill-bearing aquatic craniate animals that lack limbs with digits. They form a sister group to the tunicates, together forming the olfactores. Included in this definition are the living hagfish, lampreys, and cartilaginous and bony fish as well as various extinct related groups.
 
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/rossbowen/glossary.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
