@@ -1,0 +1,18 @@
+skos:notation,skos:prefLabel,skos:definition,prov:wasDerivedFrom,dc:contributor,dc:creator,dc:publisher,dc:source,dc:created,dc:modified
+business-glossary,Business Glossary,"A repository of approved, governed and maintained compendium of business term names, their definitions and, optionally, their relationships to other business terms. It is the vocabulary of an organisation. A business term represents a business concept or an item of terminology of the organisation.
+A Business Glossary is used to identify, approve and promote a consistent vocabulary and understanding of that vocabulary within an organisation. It provides an authoritative source for all business operations.
+The Business Glossary captures attributes of a business term such as:
+- Name
+- Definition
+- Acronyms or abbreviations
+- Synonyms
+- Name of the person, or their role, identifying the term, and date updated
+- Name of the person, or their role, who is the term steward
+- Taxonomy association for the term
+- Common misunderstandings
+- Lineage","http://thedatamaven.net/2017/04/whats-the-difference-glossary-dictionary-taxonomy-ontology,http://www.dataversity.net/what-is-a-business-glossary,http://www.dataversity.net/business-glossary-basics,http://www.dama.org/cpages/body-of-knowledge",,https://gdac.github.io/business-glossary-subgroup,,,2021-05-26,2021-05-26
+data-dictionary,Data Dictionary,"A centralised repository used to define and communicate the structure and content of data sets.
+A data dictionary may describe data in business terms, however, the information held within a data dictionary extends to include the ‘technology relevant’ or ‘machine readable’ articulation of data.
+A data dictionary will include information on data types, detail of structure and security relationships. It can be used to manage the names, descriptions, structure, characteristics, storage requirements, default values, relationships, uniqueness, and other attributes of every data element in a data model.
+The data dictionary bridges the gap between the content as its defined and how that content is articulated in a physical implementation. A data user for example, may consult a data dictionary if they wanted to know if ‘Customer ID’ is a character field or numerical field.
+The content of a data dictionary is usually extracted from the database or modelling tool and is sometimes seen as a data model in a narrative form. ","https://thedatamaven.net/2017/04/whats-the-difference-glossary-dictionary-taxonomy-ontology,https://www.dataversity.net/what-is-a-data-dictionary,http://www.dama.org/cpages/body-of-knowledge",,https://gdac.github.io/business-glossary-subgroup,,,2021-05-26,2021-05-26

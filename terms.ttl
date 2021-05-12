@@ -1,0 +1,46 @@
+
+<https://gdac.github.io/business-glossary> a <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
+  <http://purl.org/dc/terms/contributor> <https://gdac.github.io/business-glossary-subgroup> .
+
+<https://gdac.github.io/business-glossary-subgroup> a <http://www.w3.org/2006/vcard/ns#Group>;
+  <http://www.w3.org/2006/vcard/ns#organization-name> "GDAC Business Glossary Sub-group" .
+
+<https://gdac.github.io/business-glossary#business-glossary> a <http://www.w3.org/2004/02/skos/core#Concept>;
+  <http://purl.org/dc/terms/created> "2021-05-26";
+  <http://purl.org/dc/terms/creator> <https://gdac.github.io/business-glossary-subgroup>;
+  <http://purl.org/dc/terms/modified> "2021-05-26";
+  <http://www.w3.org/2004/02/skos/core#definition> """A repository of approved, governed and maintained compendium of business term names, their definitions and, optionally, their relationships to other business terms. It is the vocabulary of an organisation. A business term represents a business concept or an item of terminology of the organisation.
+A Business Glossary is used to identify, approve and promote a consistent vocabulary and understanding of that vocabulary within an organisation. It provides an authoritative source for all business operations.
+The Business Glossary captures attributes of a business term such as:
+- Name
+- Definition
+- Acronyms or abbreviations
+- Synonyms
+- Name of the person, or their role, identifying the term, and date updated
+- Name of the person, or their role, who is the term steward
+- Taxonomy association for the term
+- Common misunderstandings
+- Lineage""";
+  <http://www.w3.org/2004/02/skos/core#inScheme> <https://gdac.github.io/business-glossary>;
+  <http://www.w3.org/2004/02/skos/core#notation> "business-glossary";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Business Glossary";
+  <http://www.w3.org/ns/prov#wasDerivedFrom> "http://thedatamaven.net/2017/04/whats-the-difference-glossary-dictionary-taxonomy-ontology"^^<http://www.w3.org/2001/XMLSchema#anyURI>,
+    "http://www.dama.org/cpages/body-of-knowledge"^^<http://www.w3.org/2001/XMLSchema#anyURI>,
+    "http://www.dataversity.net/business-glossary-basics"^^<http://www.w3.org/2001/XMLSchema#anyURI>,
+    "http://www.dataversity.net/what-is-a-business-glossary"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+
+<https://gdac.github.io/business-glossary#data-dictionary> a <http://www.w3.org/2004/02/skos/core#Concept>;
+  <http://purl.org/dc/terms/created> "2021-05-26";
+  <http://purl.org/dc/terms/creator> <https://gdac.github.io/business-glossary-subgroup>;
+  <http://purl.org/dc/terms/modified> "2021-05-26";
+  <http://www.w3.org/2004/02/skos/core#definition> """A centralised repository used to define and communicate the structure and content of data sets.
+A data dictionary may describe data in business terms, however, the information held within a data dictionary extends to include the ‘technology relevant’ or ‘machine readable’ articulation of data.
+A data dictionary will include information on data types, detail of structure and security relationships. It can be used to manage the names, descriptions, structure, characteristics, storage requirements, default values, relationships, uniqueness, and other attributes of every data element in a data model.
+The data dictionary bridges the gap between the content as its defined and how that content is articulated in a physical implementation. A data user for example, may consult a data dictionary if they wanted to know if ‘Customer ID’ is a character field or numerical field.
+The content of a data dictionary is usually extracted from the database or modelling tool and is sometimes seen as a data model in a narrative form.""";
+  <http://www.w3.org/2004/02/skos/core#inScheme> <https://gdac.github.io/business-glossary>;
+  <http://www.w3.org/2004/02/skos/core#notation> "data-dictionary";
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Data Dictionary";
+  <http://www.w3.org/ns/prov#wasDerivedFrom> "http://www.dama.org/cpages/body-of-knowledge"^^<http://www.w3.org/2001/XMLSchema#anyURI>,
+    "https://thedatamaven.net/2017/04/whats-the-difference-glossary-dictionary-taxonomy-ontology"^^<http://www.w3.org/2001/XMLSchema#anyURI>,
+    "https://www.dataversity.net/what-is-a-data-dictionary"^^<http://www.w3.org/2001/XMLSchema#anyURI> .

@@ -1,0 +1,77 @@
+{
+    "@context": "http://www.w3.org/ns/csvw",
+    "@id": "https://gdac.github.io/business-glossary",
+    "rdf:type": {
+        "@id": "skos:ConceptScheme"
+    },
+    "dcterms:contributor": {
+        "@id": "https://gdac.github.io/business-glossary-subgroup",
+        "rdf:type": {
+            "@id": "vcard:Group"
+        },
+        "vcard:organization-name": "GDAC Business Glossary Sub-group"
+    },
+    "url": "terms.csv",
+    "tableSchema": {
+        "columns": [
+            {
+                "titles": "skos:notation",
+                "name": "notation",
+                "propertyUrl": "skos:notation"
+            },
+            {
+                "titles": "skos:prefLabel",
+                "propertyUrl": "skos:prefLabel"
+            },
+            {
+                "titles": "skos:definition",
+                "propertyUrl": "skos:definition"
+            },
+            {
+                "titles": "prov:wasDerivedFrom",
+                "name": "derived",
+                "datatype": "anyURI",
+                "separator": ",",
+                "propertyUrl": "prov:wasDerivedFrom"
+            },
+            {
+                "titles": "dc:contributor",
+                "propertyUrl": "dc:contributor"
+            },
+            {
+                "titles": "dc:creator",
+                "name": "creator",
+                "propertyUrl": "dc:creator",
+                "valueUrl": "{creator}"
+            },
+            {
+                "titles": "dc:publisher",
+                "propertyUrl": "dc:publisher"
+            },
+            {
+                "titles": "dc:source",
+                "propertyUrl": "dc:source"
+            },
+            {
+                "titles": "dc:created",
+                "propertyUrl": "dc:created"
+            },
+            {
+                "titles": "dc:modified",
+                "propertyUrl": "dc:modified"
+            },
+            {
+                "virtual": true,
+                "propertyUrl": "rdf:type",
+                "valueUrl": "skos:Concept"
+            },
+            {
+                "virtual": true,
+                "propertyUrl": "skos:inScheme",
+                "valueUrl": "https://gdac.github.io/business-glossary"
+            }
+        ],
+        "primaryKey": "notation",
+        "aboutUrl": "https://gdac.github.io/business-glossary#{notation}"
+    }
+}

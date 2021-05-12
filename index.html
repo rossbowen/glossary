@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<title>GDAC Business Glossary</title>
+
+<head>
+    <meta charset='utf-8'>
+    <script src='./src/respec-profile/builds/respec-gdac.js' async class='remove'></script>
+    <script class='remove'>
+        // All config options at https://respec.org/docs/
+        var respecConfig = {
+            specStatus: "unofficial",
+            editors: [{
+                name: "Mark Matten",
+                mailto: "mark.matten@nao.org.uk",
+                company: "National Audit Office",
+            }],
+            logos: [
+                {
+                    src: "data:image/png;base64,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",
+                    url: "https://github.com/GDAC",
+                    alt: "Government Data Architecture Community",
+                    width: 100,
+                    height: 100,
+                    id: "gdac-logo",
+                },
+            ],
+            // See https://respec.org/docs/#xref for usage.
+            xref: "web-platform",
+            github: "https://github.com/rossbowen/glossary",
+            issueBase: "https://github.com/rossbowen/glossary/issues",
+            otherLinks: [{
+                key: "Participate",
+                data: [{
+                    value: "We are on GitHub",
+                    href: "https://github.com/rossbowen/glossary"
+                }, {
+                    value: "File a bug",
+                    href: "https://github.com/rossbowen/glossary/issues"
+                }, {
+                    value: "Commit history",
+                    href: "https://github.com/rossbowen/glossary/commits/gh-pages"
+                }]
+            }]
+        };
+    </script>
+    <script type="application/ld+json">
+    [{'@id': 'https://gdac.github.io/business-glossary', '@type': 'skos:ConceptScheme', 'dcterms:contributor': {'@id': 'https://gdac.github.io/business-glossary-subgroup'}}, {'@id': 'https://gdac.github.io/business-glossary-subgroup', '@type': 'http://www.w3.org/2006/vcard/ns#Group', 'http://www.w3.org/2006/vcard/ns#organization-name': 'GDAC Business Glossary Sub-group'}]
+    </script>
+</head>
+
+<body resource="https://gdac.github.io/business-glossary" typeOf="skos:ConceptScheme">
+    <!-- SOTD section is required for the Table of Contents to appear. -->
+    <section id='sotd'></section>
+
+    <section data-format="markdown">
+
+        Introduction
+        ============
+
+        The Government Data Architecture Community (GDAC) is a cross-government collaborative network and related
+        sub-groups (smaller communities of practice) that brings together anyone who works in or around the field of
+        data architecture in local, regional, devolved and central government. We discuss good practice, challenges that
+        we currently face and work together as data architects towards better data-sharing and interoperability
+        throughout government.
+
+        GDAC currently has four sub-groups which operate as smaller communities of practice collaborating around
+        specific challenges to data-sharing and interoperability across government:
+
+        - Business glossaries,
+        - Metadata,
+        - Data standards,
+        - Data modelling.
+
+        The GDAC Business Glossary Sub-group aims to establish a common understanding of terms used by the community of
+        data management professionals. This document is not intended to be an official, authoritative nor complete set
+        of terms and their associated definitions, but rather a shared asset to encourage contributions, discussion,
+        debate and engagement from the wider community.
+
+        Contributing
+        ============
+
+        [GitHub Issues](https://github.com/rossbowen/glossary/issues) are preferred for discussion of terms.
+        Alternatively, you can send comments to ???.
+
+    </section>
+
+    <section id="Business Glossary" resource="https://gdac.github.io/business-glossary#business-glossary" typeOf="skos:Concept">
+        <span property="skos:inScheme" resource="https://gdac.github.io/business-glossary"></span>
+        <h1>Business Glossary</h1>
+        <table class="def">
+            <tr>
+                <th>Preferred label:</th>
+                <td><span property="skos:prefLabel">Business Glossary</span></td>
+            </tr>
+            <tr>
+                <th>URI:</th>
+                <td><a href="https://gdac.github.io/business-glossary#business-glossary"><code>https://gdac.github.io/business-glossary#business-glossary</code></a></td>
+            </tr>
+            <tr>
+                <th>Definition:</th>
+                <td><span property="skos:definition" data-format="markdown">A repository of approved, governed and maintained compendium of business term names, their definitions and, optionally, their relationships to other business terms. It is the vocabulary of an organisation. A business term represents a business concept or an item of terminology of the organisation.
+A Business Glossary is used to identify, approve and promote a consistent vocabulary and understanding of that vocabulary within an organisation. It provides an authoritative source for all business operations.
+The Business Glossary captures attributes of a business term such as:
+- Name
+- Definition
+- Acronyms or abbreviations
+- Synonyms
+- Name of the person, or their role, identifying the term, and date updated
+- Name of the person, or their role, who is the term steward
+- Taxonomy association for the term
+- Common misunderstandings
+- Lineage<span></td>
+            </tr>
+            <tr>
+                <th>Derived from:</th>
+                <td><a property="prov:wasDerivedFrom"
+                        href="http://thedatamaven.net/2017/04/whats-the-difference-glossary-dictionary-taxonomy-ontology"><code>http://thedatamaven.net/2017/04/whats-the-difference-glossary-dictionary-taxonomy-ontology</code></a>, <a property="prov:wasDerivedFrom"
+                        href="http://www.dama.org/cpages/body-of-knowledge"><code>http://www.dama.org/cpages/body-of-knowledge</code></a>, <a property="prov:wasDerivedFrom"
+                        href="http://www.dataversity.net/business-glossary-basics"><code>http://www.dataversity.net/business-glossary-basics</code></a>, <a property="prov:wasDerivedFrom"
+                        href="http://www.dataversity.net/what-is-a-business-glossary"><code>http://www.dataversity.net/what-is-a-business-glossary</code></a></td>
+            </tr>
+            <tr>
+                <th>Created by:</th>
+                <td><a property="dc:creator"
+                        href="https://gdac.github.io/business-glossary-subgroup"><code>https://gdac.github.io/business-glossary-subgroup</code></a>
+                </td>
+            </tr>
+            <tr>
+                <th>Created at:</th>
+                <td><span property="dcterms:created">2021-05-26<span></td>
+            </tr>
+            <tr>
+                <th>Modified at</th>
+                <td><span property="dcterms:modified">2021-05-26<span></td>
+            </tr>
+        </table>
+    </section>
+    <section id="Data Dictionary" resource="https://gdac.github.io/business-glossary#data-dictionary" typeOf="skos:Concept">
+        <span property="skos:inScheme" resource="https://gdac.github.io/business-glossary"></span>
+        <h1>Data Dictionary</h1>
+        <table class="def">
+            <tr>
+                <th>Preferred label:</th>
+                <td><span property="skos:prefLabel">Data Dictionary</span></td>
+            </tr>
+            <tr>
+                <th>URI:</th>
+                <td><a href="https://gdac.github.io/business-glossary#data-dictionary"><code>https://gdac.github.io/business-glossary#data-dictionary</code></a></td>
+            </tr>
+            <tr>
+                <th>Definition:</th>
+                <td><span property="skos:definition" data-format="markdown">A centralised repository used to define and communicate the structure and content of data sets.
+A data dictionary may describe data in business terms, however, the information held within a data dictionary extends to include the ‘technology relevant’ or ‘machine readable’ articulation of data.
+A data dictionary will include information on data types, detail of structure and security relationships. It can be used to manage the names, descriptions, structure, characteristics, storage requirements, default values, relationships, uniqueness, and other attributes of every data element in a data model.
+The data dictionary bridges the gap between the content as its defined and how that content is articulated in a physical implementation. A data user for example, may consult a data dictionary if they wanted to know if ‘Customer ID’ is a character field or numerical field.
+The content of a data dictionary is usually extracted from the database or modelling tool and is sometimes seen as a data model in a narrative form.<span></td>
+            </tr>
+            <tr>
+                <th>Derived from:</th>
+                <td><a property="prov:wasDerivedFrom"
+                        href="https://www.dataversity.net/what-is-a-data-dictionary"><code>https://www.dataversity.net/what-is-a-data-dictionary</code></a>, <a property="prov:wasDerivedFrom"
+                        href="https://thedatamaven.net/2017/04/whats-the-difference-glossary-dictionary-taxonomy-ontology"><code>https://thedatamaven.net/2017/04/whats-the-difference-glossary-dictionary-taxonomy-ontology</code></a>, <a property="prov:wasDerivedFrom"
+                        href="http://www.dama.org/cpages/body-of-knowledge"><code>http://www.dama.org/cpages/body-of-knowledge</code></a></td>
+            </tr>
+            <tr>
+                <th>Created by:</th>
+                <td><a property="dc:creator"
+                        href="https://gdac.github.io/business-glossary-subgroup"><code>https://gdac.github.io/business-glossary-subgroup</code></a>
+                </td>
+            </tr>
+            <tr>
+                <th>Created at:</th>
+                <td><span property="dcterms:created">2021-05-26<span></td>
+            </tr>
+            <tr>
+                <th>Modified at</th>
+                <td><span property="dcterms:modified">2021-05-26<span></td>
+            </tr>
+        </table>
+    </section>
+</body>
+
+</html>
