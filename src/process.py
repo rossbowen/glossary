@@ -32,11 +32,11 @@ data = json.loads(
             "prov": "http://www.w3.org/ns/prov#"
         }))["@graph"]
 
-metadata = [item for item in data if item["@type"] != "skos:Concept"]
+metadata = [item for item in data if item.get("@type") != "skos:Concept"]
 
-data = [item for item in data if item["@type"] == "skos:Concept"]
+data = [item for item in data if item.get("@type") == "skos:Concept"]
 
-data.sort(key = lambda x: x["skos:prefLabel"])
+data.sort(key = lambda x: x["skos:prefLabel"]["@value"])
 
 with open("./template.html") as f:
     tmpl = Template(f.read(), trim_blocks=True, lstrip_blocks=True)

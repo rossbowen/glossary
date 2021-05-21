@@ -44,7 +44,7 @@
         };
     </script>
     <script type="application/ld+json">
-    [{'@id': 'https://gdac.github.io/business-glossary', '@type': 'skos:ConceptScheme', 'dcterms:contributor': {'@id': 'https://gdac.github.io/business-glossary-subgroup'}}, {'@id': 'https://gdac.github.io/business-glossary-subgroup', '@type': 'http://www.w3.org/2006/vcard/ns#Group', 'http://www.w3.org/2006/vcard/ns#organization-name': 'GDAC Business Glossary Sub-group'}]
+    [{'@id': 'https://gdac.github.io/business-glossary', '@type': 'skos:ConceptScheme', 'skos:prefLabel': {'@language': 'en', '@value': 'GDAC Vocabulary'}}, {'@id': 'https://gdac.github.io/business-glossary#gdac', 'http://xmlns.com/foaf/0.1/name': {'@language': 'en', '@value': 'GDAC'}}, {'@id': 'https://gdac.github.io/business-glossary#gdac-business-glossary-subgroup', 'http://xmlns.com/foaf/0.1/name': {'@language': 'en', '@value': 'GDAC Busness Glossary Subgroup'}}]
     </script>
 </head>
 
@@ -84,9 +84,48 @@
 
     </section>
 
-    <section id="Business Glossary" resource="https://gdac.github.io/business-glossary#business-glossary" typeOf="skos:Concept">
+    <section id="{'@id': 'https://gdac.github.io/business-glossary#C_154721082307'}" resource="https://gdac.github.io/business-glossary#C_154721082307" typeOf="skos:Concept">
+        <h1>Associative Relationship</h1>
         <span property="skos:inScheme" resource="https://gdac.github.io/business-glossary"></span>
+        <table class="def">
+            <tr>
+                <th>Preferred label:</th>
+                <td><span property="skos:prefLabel">Associative Relationship</span></td>
+            </tr>
+            <tr>
+                <th>URI:</th>
+                <td><a href="https://gdac.github.io/business-glossary#C_154721082307"><code>https://gdac.github.io/business-glossary#C_154721082307</code></a></td>
+            </tr>
+            <tr>
+                <th>Definition:</th>
+                <td><span property="skos:definition" data-format="markdown">A relationship between terms or records that are conceptually close but where the relationship is neither equivalent nor hierarchical.
+
+Providing visibility of concepts with an associative relationship can:
+•	assist users in gaining a broader understanding of a topic
+•	provide clarification between concepts with overlapping meanings that may be confused by users but are intended to be used as separate concepts
+•	provide clarity where a concept is a necessary component in any explanation or definition of another.
+
+Associated relationships may exist between terms in the same hierarchy or different hierarchies.
+
+A vocabulary may list and define the types of associative relationships used. The types of relationship will vary from vocabulary to vocabulary, for example, the types of associative relationships between generic terms would differ to the types of associative relationships between people. 
+
+Types of associative relationships found between terms include:
+•	related to
+•	formerly related to 
+•	distinguished from
+•	meaning/usage overlaps with
+•	possible identified as
+
+Types of associative relationships found between people include:
+•	student of
+•	teacher of
+•	uncle of<span></td>
+            </tr>
+        </table>
+    </section>
+    <section id="{'@id': 'https://gdac.github.io/business-glossary#C_15478674304'}" resource="https://gdac.github.io/business-glossary#C_15478674304" typeOf="skos:Concept">
         <h1>Business Glossary</h1>
+        <span property="skos:inScheme" resource="https://gdac.github.io/business-glossary"></span>
         <table class="def">
             <tr>
                 <th>Preferred label:</th>
@@ -94,50 +133,75 @@
             </tr>
             <tr>
                 <th>URI:</th>
-                <td><a href="https://gdac.github.io/business-glossary#business-glossary"><code>https://gdac.github.io/business-glossary#business-glossary</code></a></td>
+                <td><a href="https://gdac.github.io/business-glossary#C_15478674304"><code>https://gdac.github.io/business-glossary#C_15478674304</code></a></td>
             </tr>
             <tr>
                 <th>Definition:</th>
-                <td><span property="skos:definition" data-format="markdown">A repository of approved, governed and maintained compendium of business term names, their definitions and, optionally, their relationships to other business terms. It is the vocabulary of an organisation. A business term represents a business concept or an item of terminology of the organisation.
+                <td><span property="skos:definition" data-format="markdown">A repository of approved, governed and maintained compendium of business term names, there definitions and, optionally, their relationships to other business terms. It is the vocabulary of an organisation. A business term represents a business concept or an item of terminology of the organisation. 
+
 A Business Glossary is used to identify, approve and promote a consistent vocabulary and understanding of that vocabulary within an organisation. It provides an authoritative source for all business operations.
-The Business Glossary captures attributes of a business term such as:
-- Name
-- Definition
-- Acronyms or abbreviations
-- Synonyms
-- Name of the person, or their role, identifying the term, and date updated
-- Name of the person, or their role, who is the term steward
-- Taxonomy association for the term
-- Common misunderstandings
-- Lineage<span></td>
-            </tr>
-            <tr>
-                <th>Derived from:</th>
-                <td><a property="prov:wasDerivedFrom"
-                        href="http://thedatamaven.net/2017/04/whats-the-difference-glossary-dictionary-taxonomy-ontology"><code>http://thedatamaven.net/2017/04/whats-the-difference-glossary-dictionary-taxonomy-ontology</code></a>, <a property="prov:wasDerivedFrom"
-                        href="http://www.dama.org/cpages/body-of-knowledge"><code>http://www.dama.org/cpages/body-of-knowledge</code></a>, <a property="prov:wasDerivedFrom"
-                        href="http://www.dataversity.net/business-glossary-basics"><code>http://www.dataversity.net/business-glossary-basics</code></a>, <a property="prov:wasDerivedFrom"
-                        href="http://www.dataversity.net/what-is-a-business-glossary"><code>http://www.dataversity.net/what-is-a-business-glossary</code></a></td>
-            </tr>
-            <tr>
-                <th>Created by:</th>
-                <td><a property="dc:creator"
-                        href="https://gdac.github.io/business-glossary-subgroup"><code>https://gdac.github.io/business-glossary-subgroup</code></a>
-                </td>
-            </tr>
-            <tr>
-                <th>Created at:</th>
-                <td><span property="dcterms:created">2021-05-26<span></td>
-            </tr>
-            <tr>
-                <th>Modified at</th>
-                <td><span property="dcterms:modified">2021-05-26<span></td>
+
+The Business Glossary captures attributes of a business term such as: 
+•	Name
+•	Definition
+•	Acronyms or abbreviations
+•	Synonyms
+•	Name of the person, or their role, identifying the term, and date updated
+•	Name of the person, or their role, who is the term steward
+•	Terms with associative or hierarchical relationships
+•	Common misunderstandings
+•	Provenance<span></td>
             </tr>
         </table>
     </section>
-    <section id="Data Dictionary" resource="https://gdac.github.io/business-glossary#data-dictionary" typeOf="skos:Concept">
+    <section id="{'@id': 'https://gdac.github.io/business-glossary#C_15472599305'}" resource="https://gdac.github.io/business-glossary#C_15472599305" typeOf="skos:Concept">
+        <h1>Data Catalogue</h1>
         <span property="skos:inScheme" resource="https://gdac.github.io/business-glossary"></span>
+        <table class="def">
+            <tr>
+                <th>Preferred label:</th>
+                <td><span property="skos:prefLabel">Data Catalogue</span></td>
+            </tr>
+            <tr>
+                <th>URI:</th>
+                <td><a href="https://gdac.github.io/business-glossary#C_15472599305"><code>https://gdac.github.io/business-glossary#C_15472599305</code></a></td>
+            </tr>
+            <tr>
+                <th>Definition:</th>
+                <td><span property="skos:definition" data-format="markdown">An inventory of available data assets supported by a collection of metadata, enabling data users to:
+•	search for and find data quickly
+•	see all the available datasets
+•	evaluate data and make informed choices on the suitability of data
+•	perform data preparation and analysis efficiently and with confidence.
+
+A data catalogue may provide other capabilities including:
+•	support for data curation and collaborative data management 
+•	data usage tracking
+•	intelligent dataset recommendations 
+•	enforcing policy and data governance.
+
+Data catalogues should not exist in isolation but should share metadata bidirectionally with other data management and analysis tools and data platforms. 
+Modern machine learning-augmented data catalogues may automate various tasks involved in data cataloguing, including metadata discovery, ingestion, translation, enrichment and the creation of semantic relations between metadata. <span></td>
+            </tr>
+        </table>
+    </section>
+    <section id="{'@id': 'https://gdac.github.io/business-glossary#C_164710775302'}" resource="https://gdac.github.io/business-glossary#C_164710775302" typeOf="skos:Concept">
+        <h1>Data Catlogue</h1>
+        <span property="skos:inScheme" resource="https://gdac.github.io/business-glossary"></span>
+        <table class="def">
+            <tr>
+                <th>Preferred label:</th>
+                <td><span property="skos:prefLabel">Data Catlogue</span></td>
+            </tr>
+            <tr>
+                <th>URI:</th>
+                <td><a href="https://gdac.github.io/business-glossary#C_164710775302"><code>https://gdac.github.io/business-glossary#C_164710775302</code></a></td>
+            </tr>
+        </table>
+    </section>
+    <section id="{'@id': 'https://gdac.github.io/business-glossary#C_15478289308'}" resource="https://gdac.github.io/business-glossary#C_15478289308" typeOf="skos:Concept">
         <h1>Data Dictionary</h1>
+        <span property="skos:inScheme" resource="https://gdac.github.io/business-glossary"></span>
         <table class="def">
             <tr>
                 <th>Preferred label:</th>
@@ -145,36 +209,256 @@ The Business Glossary captures attributes of a business term such as:
             </tr>
             <tr>
                 <th>URI:</th>
-                <td><a href="https://gdac.github.io/business-glossary#data-dictionary"><code>https://gdac.github.io/business-glossary#data-dictionary</code></a></td>
+                <td><a href="https://gdac.github.io/business-glossary#C_15478289308"><code>https://gdac.github.io/business-glossary#C_15478289308</code></a></td>
             </tr>
             <tr>
                 <th>Definition:</th>
                 <td><span property="skos:definition" data-format="markdown">A centralised repository used to define and communicate the structure and content of data sets.
-A data dictionary may describe data in business terms, however, the information held within a data dictionary extends to include the ‘technology relevant’ or ‘machine readable’ articulation of data.
+
+A data dictionary may describe data in business terms, however, the information held within a data  dictionary extends to include the ‘technology relevant’ or ‘machine readable’ articulation of data. 
+
 A data dictionary will include information on data types, detail of structure and security relationships. It can be used to manage the names, descriptions, structure, characteristics, storage requirements, default values, relationships, uniqueness, and other attributes of every data element in a data model.
-The data dictionary bridges the gap between the content as its defined and how that content is articulated in a physical implementation. A data user for example, may consult a data dictionary if they wanted to know if ‘Customer ID’ is a character field or numerical field.
-The content of a data dictionary is usually extracted from the database or modelling tool and is sometimes seen as a data model in a narrative form.<span></td>
+The data dictionary bridges the gap between the content as its defined and how that content is articulated in a physical implementation. A data user for example, may consult a data dictionary if they wanted to know if ‘Customer ID’ is a character field or numerical field. 
+The content of a data dictionary is usually extracted from the database or modelling tool and is sometimes seen as a data model in a narrative form<span></td>
+            </tr>
+        </table>
+    </section>
+    <section id="{'@id': 'https://gdac.github.io/business-glossary#C_154710495304'}" resource="https://gdac.github.io/business-glossary#C_154710495304" typeOf="skos:Concept">
+        <h1>Data Lineage</h1>
+        <span property="skos:inScheme" resource="https://gdac.github.io/business-glossary"></span>
+        <table class="def">
+            <tr>
+                <th>Preferred label:</th>
+                <td><span property="skos:prefLabel">Data Lineage</span></td>
             </tr>
             <tr>
-                <th>Derived from:</th>
-                <td><a property="prov:wasDerivedFrom"
-                        href="https://www.dataversity.net/what-is-a-data-dictionary"><code>https://www.dataversity.net/what-is-a-data-dictionary</code></a>, <a property="prov:wasDerivedFrom"
-                        href="https://thedatamaven.net/2017/04/whats-the-difference-glossary-dictionary-taxonomy-ontology"><code>https://thedatamaven.net/2017/04/whats-the-difference-glossary-dictionary-taxonomy-ontology</code></a>, <a property="prov:wasDerivedFrom"
-                        href="http://www.dama.org/cpages/body-of-knowledge"><code>http://www.dama.org/cpages/body-of-knowledge</code></a></td>
+                <th>URI:</th>
+                <td><a href="https://gdac.github.io/business-glossary#C_154710495304"><code>https://gdac.github.io/business-glossary#C_154710495304</code></a></td>
             </tr>
             <tr>
-                <th>Created by:</th>
-                <td><a property="dc:creator"
-                        href="https://gdac.github.io/business-glossary-subgroup"><code>https://gdac.github.io/business-glossary-subgroup</code></a>
-                </td>
+                <th>Definition:</th>
+                <td><span property="skos:definition" data-format="markdown">The path data follows from its original source to its current location. A description of the data lineage will include details of the pathway that was followed and the changes which were made to the data at different points along this pathway.<span></td>
+            </tr>
+        </table>
+    </section>
+    <section id="{'@id': 'https://gdac.github.io/business-glossary#C_154748104306'}" resource="https://gdac.github.io/business-glossary#C_154748104306" typeOf="skos:Concept">
+        <h1>Facet Taxonomy</h1>
+        <span property="skos:inScheme" resource="https://gdac.github.io/business-glossary"></span>
+        <table class="def">
+            <tr>
+                <th>Preferred label:</th>
+                <td><span property="skos:prefLabel">Facet Taxonomy</span></td>
             </tr>
             <tr>
-                <th>Created at:</th>
-                <td><span property="dcterms:created">2021-05-26<span></td>
+                <th>URI:</th>
+                <td><a href="https://gdac.github.io/business-glossary#C_154748104306"><code>https://gdac.github.io/business-glossary#C_154748104306</code></a></td>
             </tr>
             <tr>
-                <th>Modified at</th>
-                <td><span property="dcterms:modified">2021-05-26<span></td>
+                <th>Definition:</th>
+                <td><span property="skos:definition" data-format="markdown">A type of Taxonomy that allows an item to be assigned to multiple taxonomies (sets of attributes), enabling the classification to be ordered in multiple ways, rather than in a single, predetermined order (as in a strict hierarchy).<span></td>
+            </tr>
+        </table>
+    </section>
+    <section id="{'@id': 'https://gdac.github.io/business-glossary#C_15476827306'}" resource="https://gdac.github.io/business-glossary#C_15476827306" typeOf="skos:Concept">
+        <h1>Flat Taxonomy</h1>
+        <span property="skos:inScheme" resource="https://gdac.github.io/business-glossary"></span>
+        <table class="def">
+            <tr>
+                <th>Preferred label:</th>
+                <td><span property="skos:prefLabel">Flat Taxonomy</span></td>
+            </tr>
+            <tr>
+                <th>URI:</th>
+                <td><a href="https://gdac.github.io/business-glossary#C_15476827306"><code>https://gdac.github.io/business-glossary#C_15476827306</code></a></td>
+            </tr>
+            <tr>
+                <th>Definition:</th>
+                <td><span property="skos:definition" data-format="markdown">A type of Taxonomy that is simply a list of categories. A Flat Taxonomy has only top-level categories.<span></td>
+            </tr>
+        </table>
+    </section>
+    <section id="{'@id': 'https://gdac.github.io/business-glossary#C_15472294302'}" resource="https://gdac.github.io/business-glossary#C_15472294302" typeOf="skos:Concept">
+        <h1>Hierarchical Relationship</h1>
+        <span property="skos:inScheme" resource="https://gdac.github.io/business-glossary"></span>
+        <table class="def">
+            <tr>
+                <th>Preferred label:</th>
+                <td><span property="skos:prefLabel">Hierarchical Relationship</span></td>
+            </tr>
+            <tr>
+                <th>URI:</th>
+                <td><a href="https://gdac.github.io/business-glossary#C_15472294302"><code>https://gdac.github.io/business-glossary#C_15472294302</code></a></td>
+            </tr>
+            <tr>
+                <th>Definition:</th>
+                <td><span property="skos:definition" data-format="markdown">Refer to those relationships based on degrees or levels of superordination and subordination. These types of relationship are often referred to as broader/narrower relationships or parent/child relationship. Within a hierarchical relationship the superordinate/broader/parent term represents a class or a whole and the subordinate/narrower/child term refers to its members or parts. 
+	The 3 main types of hierarchical relationship include:
+		•	the whole/part relationships
+		•	the instance relationship
+		•	genus/species relationship<span></td>
+            </tr>
+        </table>
+    </section>
+    <section id="{'@id': 'https://gdac.github.io/business-glossary#C_15474774304'}" resource="https://gdac.github.io/business-glossary#C_15474774304" typeOf="skos:Concept">
+        <h1>Hierarchical Taxonomy</h1>
+        <span property="skos:inScheme" resource="https://gdac.github.io/business-glossary"></span>
+        <table class="def">
+            <tr>
+                <th>Preferred label:</th>
+                <td><span property="skos:prefLabel">Hierarchical Taxonomy</span></td>
+            </tr>
+            <tr>
+                <th>URI:</th>
+                <td><a href="https://gdac.github.io/business-glossary#C_15474774304"><code>https://gdac.github.io/business-glossary#C_15474774304</code></a></td>
+            </tr>
+            <tr>
+                <th>Definition:</th>
+                <td><span property="skos:definition" data-format="markdown">A type of Taxonomy that is a hierarchical arrangement of categories. Categories are organised using hierarchical relationships into any number of levels of category and sub-category as required. A sub-category inherits all the properties of the category above it but can also have additional properties.
+
+Individual categories within the hierarchy are arranged in order of importance or status. Moving up the hierarchy means expanding, or broadening, the category. Moving down the hierarchy means refining, or narrowing, the category.
+
+Not all hierarchies are simple, one-to-one-or-many parent-child relationships. Some hierarchies contain categories that can be in multiple parent categories. Taxonomies that allow this cross-listing are known as polyhierarchical.<span></td>
+            </tr>
+        </table>
+    </section>
+    <section id="{'@id': 'https://gdac.github.io/business-glossary#C_15475433307'}" resource="https://gdac.github.io/business-glossary#C_15475433307" typeOf="skos:Concept">
+        <h1>Instance Relationship</h1>
+        <span property="skos:inScheme" resource="https://gdac.github.io/business-glossary"></span>
+        <table class="def">
+            <tr>
+                <th>Preferred label:</th>
+                <td><span property="skos:prefLabel">Instance Relationship</span></td>
+            </tr>
+            <tr>
+                <th>URI:</th>
+                <td><a href="https://gdac.github.io/business-glossary#C_15475433307"><code>https://gdac.github.io/business-glossary#C_15475433307</code></a></td>
+            </tr>
+            <tr>
+                <th>Definition:</th>
+                <td><span property="skos:definition" data-format="markdown">A type of hierarchical relationship found in vocabularies with a general category of things or events where the narrower/subordinate terms represent specific examples or instances of the broader/superordinate term. 
+Example of instance relationship:
+•	Rivers
+o	Thames
+o	Nile
+o	Yangtze<span></td>
+            </tr>
+        </table>
+    </section>
+    <section id="{'@id': 'https://gdac.github.io/business-glossary#C_1547997103010'}" resource="https://gdac.github.io/business-glossary#C_1547997103010" typeOf="skos:Concept">
+        <h1>Network Taxonomy</h1>
+        <span property="skos:inScheme" resource="https://gdac.github.io/business-glossary"></span>
+        <table class="def">
+            <tr>
+                <th>Preferred label:</th>
+                <td><span property="skos:prefLabel">Network Taxonomy</span></td>
+            </tr>
+            <tr>
+                <th>URI:</th>
+                <td><a href="https://gdac.github.io/business-glossary#C_1547997103010"><code>https://gdac.github.io/business-glossary#C_1547997103010</code></a></td>
+            </tr>
+            <tr>
+                <th>Definition:</th>
+                <td><span property="skos:definition" data-format="markdown">A type of Taxonomy that organises content into categories with hierarchical relationships or associative relationships. Categories can be linked to any other categories. Relationships among items can have different meanings, including semantic ones. E.g. “people who buy this also bought that”, “most popular”, etc.<span></td>
+            </tr>
+        </table>
+    </section>
+    <section id="{'@id': 'https://gdac.github.io/business-glossary#C_4545410210303'}" resource="https://gdac.github.io/business-glossary#C_4545410210303" typeOf="skos:Concept">
+        <h1>Ontology</h1>
+        <span property="skos:inScheme" resource="https://gdac.github.io/business-glossary"></span>
+        <table class="def">
+            <tr>
+                <th>Preferred label:</th>
+                <td><span property="skos:prefLabel">Ontology</span></td>
+            </tr>
+            <tr>
+                <th>URI:</th>
+                <td><a href="https://gdac.github.io/business-glossary#C_4545410210303"><code>https://gdac.github.io/business-glossary#C_4545410210303</code></a></td>
+            </tr>
+        </table>
+    </section>
+    <section id="{'@id': 'https://gdac.github.io/business-glossary#C_15473372306'}" resource="https://gdac.github.io/business-glossary#C_15473372306" typeOf="skos:Concept">
+        <h1>Provenance</h1>
+        <span property="skos:inScheme" resource="https://gdac.github.io/business-glossary"></span>
+        <table class="def">
+            <tr>
+                <th>Preferred label:</th>
+                <td><span property="skos:prefLabel">Provenance</span></td>
+            </tr>
+            <tr>
+                <th>URI:</th>
+                <td><a href="https://gdac.github.io/business-glossary#C_15473372306"><code>https://gdac.github.io/business-glossary#C_15473372306</code></a></td>
+            </tr>
+            <tr>
+                <th>Definition:</th>
+                <td><span property="skos:definition" data-format="markdown">Information about entities, activities, and people involved in producing a piece of data or thing, which can be used to form assessments about its quality, reliability or trustworthiness.<span></td>
+            </tr>
+        </table>
+    </section>
+    <section id="{'@id': 'https://gdac.github.io/business-glossary#C_1547109210305'}" resource="https://gdac.github.io/business-glossary#C_1547109210305" typeOf="skos:Concept">
+        <h1>Taxonomy</h1>
+        <span property="skos:inScheme" resource="https://gdac.github.io/business-glossary"></span>
+        <table class="def">
+            <tr>
+                <th>Preferred label:</th>
+                <td><span property="skos:prefLabel">Taxonomy</span></td>
+            </tr>
+            <tr>
+                <th>URI:</th>
+                <td><a href="https://gdac.github.io/business-glossary#C_1547109210305"><code>https://gdac.github.io/business-glossary#C_1547109210305</code></a></td>
+            </tr>
+            <tr>
+                <th>Definition:</th>
+                <td><span property="skos:definition" data-format="markdown">A defined classification of classes, types or concepts represented as a set of categories (i.e. a controlled vocabulary of terms), within a domain. It also includes the principles or rules that underlie such classification.
+
+A Taxonomy helps to reduce ambiguity and control synonyms. It is a system for naming and organising things into groups, that share similar characteristics, to make them easier to index and then to find.
+
+Depending upon the principles or rules of the Taxonomy, objects would normally be related to one and only one category. However, according to the purpose of the Taxonomy, there may be circumstances where objects could be related to more than one category.
+
+For example, it can be used to organise knowledge (content, documents, records, etc) by using the controlled vocabulary to make it easier to find related information.
+
+There are several recognised types of Taxonomy.<span></td>
+            </tr>
+        </table>
+    </section>
+    <section id="{'@id': 'https://gdac.github.io/business-glossary#C_15475584307'}" resource="https://gdac.github.io/business-glossary#C_15475584307" typeOf="skos:Concept">
+        <h1>The Genus/Species Relationship</h1>
+        <span property="skos:inScheme" resource="https://gdac.github.io/business-glossary"></span>
+        <table class="def">
+            <tr>
+                <th>Preferred label:</th>
+                <td><span property="skos:prefLabel">The Genus/Species Relationship</span></td>
+            </tr>
+            <tr>
+                <th>URI:</th>
+                <td><a href="https://gdac.github.io/business-glossary#C_15475584307"><code>https://gdac.github.io/business-glossary#C_15475584307</code></a></td>
+            </tr>
+            <tr>
+                <th>Definition:</th>
+                <td><span property="skos:definition" data-format="markdown">A type of hierarchical relationship that identifies a link between a class and its members. Within this type of relationship, the narrower/subordinate/child term will be a ‘kind of’, ‘type of’ or ‘manifestation of’ the broader/superordinate/parent term.  The placement of a child may be tested by the all/some argument. In the example below all dolphins are mammals and some mammals are dolphins.  <span></td>
+            </tr>
+        </table>
+    </section>
+    <section id="{'@id': 'https://gdac.github.io/business-glossary#C_1547454103010'}" resource="https://gdac.github.io/business-glossary#C_1547454103010" typeOf="skos:Concept">
+        <h1>Whole/part relationship</h1>
+        <span property="skos:inScheme" resource="https://gdac.github.io/business-glossary"></span>
+        <table class="def">
+            <tr>
+                <th>Preferred label:</th>
+                <td><span property="skos:prefLabel">Whole/part relationship</span></td>
+            </tr>
+            <tr>
+                <th>URI:</th>
+                <td><a href="https://gdac.github.io/business-glossary#C_1547454103010"><code>https://gdac.github.io/business-glossary#C_1547454103010</code></a></td>
+            </tr>
+            <tr>
+                <th>Definition:</th>
+                <td><span property="skos:definition" data-format="markdown">A type of hierarchical relationship that covers situations where one concept is inherently included in the other. Each child should be part of the parent and all other ancestors so the terms can be organised into logical hierarchies with the whole or parent being treated as the superordinate or broader term. Whole /part relationships can be applied to several types of terms including geographic locations, parts of the body.
+Example of whole/part relationships:
+•	United Kingdom
+o	England 
+o	Wales 
+o	Scotland
+o	Northern Ireland<span></td>
             </tr>
         </table>
     </section>

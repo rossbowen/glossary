@@ -85,14 +85,14 @@
     </section>
 
     {% for item in jsonld %}
-    <section id="{{ item['skos:prefLabel'] }}" resource="{{ item['@id'] }}" typeOf="{{ item['@type'] }}">
+    <section id="{{ item['skos:notation'] }}" resource="{{ item['@id'] }}" typeOf="{{ item['@type'] }}">
+        <h1>{{ item["skos:prefLabel"]["@value"] }}</h1>
         <span property="skos:inScheme" resource="https://gdac.github.io/business-glossary"></span>
-        <h1>{{ item["skos:prefLabel"] }}</h1>
         <table class="def">
             {% if item["skos:prefLabel"] %}
             <tr>
                 <th>{{ labels["skos:prefLabel"] }}</th>
-                <td><span property="skos:prefLabel">{{ item["skos:prefLabel"] }}</span></td>
+                <td><span property="skos:prefLabel">{{ item["skos:prefLabel"]["@value"] }}</span></td>
             </tr>
             {% endif %}
             {% if item["skos:altLabel"] %}
@@ -111,7 +111,7 @@
             {% if item["skos:definition"] %}
             <tr>
                 <th>{{ labels["skos:definition"] }}</th>
-                <td><span property="skos:definition" data-format="markdown">{{ item["skos:definition"] }}<span></td>
+                <td><span property="skos:definition" data-format="markdown">{{ item["skos:definition"]["@value"] }}<span></td>
             </tr>
             {% endif %}
             {% if item["prov:wasDerivedFrom"] %}
